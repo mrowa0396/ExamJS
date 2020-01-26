@@ -12,7 +12,7 @@ function getTagsOfElements(elements) {
 
 }
 getTagsOfElements(sampl);
-console.log(SampleTagsArray);
+
 return sampleTagsArray;
 
 
@@ -51,7 +51,7 @@ function getInnerTextsOfElements(elements) {
 
 
 }
-console.log(sampleTagsArray);
+
 return sampleTagsArray;
 
 }
@@ -71,7 +71,7 @@ function getAddressesOfElements(elements) {
 
 
 }
-console.log(sampleTagsArray);
+
 return sampleTagsArray;
 
 }

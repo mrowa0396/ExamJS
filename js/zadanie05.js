@@ -1,11 +1,9 @@
-const allButtons = document.querySelectorAll('button');
-const container = document.getElementById('container');
-{
+const buttons = document.getElementsByTagName("button");
+const container = document.querySelector("#container");
 
-    for (i = 0; i < allButtons.length; i++) {
-        allButtons[i].addEventListener('click', function () {
-            container.innerHTML = this.dataset.text;
-        })
-    }
-
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener( "click", function() {
+        let text = this.dataset.text;
+        container.innerText = text;
+    });
 }

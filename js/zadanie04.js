@@ -20,23 +20,15 @@ return sampleTagsArray;
 
 //4b
 
-const sampleid = document.querySelectorAll('sample_id').classList;
+const sample = document.querySelector("#sample_id");
 
-function getTagsOfIds(elements) {
-
-    const sampleTagsArray = [];
-    for (i = 0; i < elements.lenght; i++) {
-        sampleTagsArray.push(elements[i])
-    }
-
-
+function getClassesOfElement(element) {
+    const array = [];
+    const classNamesArray = element.className;
+    array.push(classNamesArray);
+    return array;
 }
-console.log(sampleTagsArray);
-return sampleTagsArray;
-
-}
-
-getTagsOfIds(sampleid);
+console.log(getClassesOfElement(sample));
 
 //4c 
 
